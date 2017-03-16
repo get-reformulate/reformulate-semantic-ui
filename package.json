@@ -1,6 +1,6 @@
 {
   "name": "reformulate-semantic-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reformulate meets Semantic UI React",
   "main": "build/index.js",
   "scripts": {
