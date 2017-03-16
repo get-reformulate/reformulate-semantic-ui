@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '7'
+cache: yarn
+before_install: npm i -g yarn
+install: yarn install
+script: yarn run build
+deploy:
+  provider: npm
+  email: josemoreiravarzim@gmail.com
+  api_key:
+    secure: DLM7wyk9xdq7Oxc1Jwk4Q7pOBFOxY3wHSK7d/HYEBnKb+SvNisBwCaR1XMJ64KccrIDLWfPhO6D3g21mbIn/Kh2fOA4dR9cptdHZkQ6TlfUBDnHoKUCoIV1/eq2Qc59IB0OtiWOQ4yimUyfd/Fvxo+S9ldVIlhxB4zV6qxYq9KphNvxR/vSbk8jl/EeZ3xN6rC6BbHMS4Hh+pJF8TbvpdE1bJZwnAYUqwT2pvisPNRT8o8Vew/4oMnqoIa/VoevCAtSoSdH1s/S9Dtl9UppOrRh66C90b9m9XWoEsQzHvWRdyqOz0gVz/Ppcnq/vW+tDdYrDhlSzPe2UXdMZy0XPaYVmqJVtc9CluGrX26S6fSDU2nGbme5J8N6AmFJ+fYUSIp+3oqzhHDPxT6Yk3/JDFiAfMN/ycC1TAMvmJ2ku9wp6Np0JttyRXqC4rjBPZS7AGjrhK8nB96cy5HPVmvUJoLaBOp8YX8O+A4mdr9nSw/tR5hJ5GTsPZ0Uk+GIYqCzyMxJPdod6/eaZZRqkYNvYfG/QuD/ac5MN8h8TKdQ8KDfSOPbrhK2V+LonHzhW3CZ9n9dEoeCz2NSq8cqnoIs2zkUahKZ5GtGoYg77fEp77jqx13UJUX/yJKOrcHJ1CzYg4YinpcvrzJQn6zjEERwaXBfkDpUhH9ClVNnqFBheJ/k=
+  on:
+    tags: true
+    repo: get-reformulate/reformulate-semantic-ui
